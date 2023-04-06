@@ -1,0 +1,70 @@
+##
+## Archivo de include para configuración de 'cmake' en Linux y macOS
+##
+
+## nombre del proyecto
+
+## calcular en 'diralu' el nombre de la carpeta de trabajo del alumno
+
+get_filename_component ( padre_absoluto ".." ABSOLUTE )
+get_filename_component ( diralu ${padre_absoluto} NAME )
+
+## componer los paths a los distintas carpetas de trabajo
+
+set (raiz       "../..")
+set (rec_src    ${raiz}/recursos/src)
+set (rec_inc    ${raiz}/recursos/include)
+set (alu_src    ${raiz}/${diralu}/src)
+set (alu_inc    ${raiz}/${diralu}/include)
+set (ejecutable "pracs_ig_exe")
+
+## definir flags para compilador y enlazador
+
+
+if ( ${CMAKE_SYSTEM_NAME} STREQUAL "Darwin" )
+   add_definitions (-DOSX)
+   set (flags_compilador "-std=c++11  -I/usr/local/include ${opcs_warnings}")
+   set (flags_enlazador "")
+   link_directories( /usr/local/lib )
+   find_library( ogllib OpenGL )
+elseif ( ${CMAKE_SYSTEM_NAME} STREQUAL "Linux" )
+   add_definitions (-DLINUX)
+   set (flags_compilador "-std=c++11  ${opcs_warnings}")
+   set (flags_enlazador "")
+   set (ogllib GLU GLEW GL)
+elseif ( ${CMAKE_SYSTEM_NAME} STREQUAL "Windows" )
+   message( FATAL_ERROR "En esta carpeta no se puede compilar en Windows, usa la carpeta 'cmake-win' para eso ")
+else()
+   message( FATAL_ERROR "No puedo compilar en este sistema: no es Linux, macOS ni Windows " )
+endif()
+
+## especificar a 'cmake' los directorios para ejecutable y los flags
+
+##set (CMAKE_RUNTIME_OUTPUT_DIRECTORY "${raiz}/${diralu}/bin")  ## el binario lo dejamos en 'cmake-unix/build'
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${flags_compilador}")
+set (CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${flags_enlazador}")
+
+## definir donde están las unidades de compilación y los headers
+
+file (GLOB alu_units ${alu_src}/*.cpp)
+file (GLOB rec_units ${rec_src}/*.cpp)
+
+file (GLOB alu_headers ${alu_inc}/*.h)
+file (GLOB rec_headers ${rec_inc}/*.h)
+
+
+## definir el ejecutable y los directorios de include
+
+add_executable ( ${ejecutable} ${alu_units} ${rec_units} ${alu_headers} ${rec_headers})
+target_include_directories ( ${ejecutable} PUBLIC ${alu_inc} ${rec_inc})
+target_link_libraries( ${ejecutable} glfw jpeg ${ogllib})
+
+##### imprime todas las variables cuando se pone 'cmake .' (activar/desactivar poniendo true/false)
+
+if ( false )
+   get_cmake_property(_variableNames VARIABLES)
+   list (SORT _variableNames)
+   foreach (_variableName ${_variableNames})
+      message(STATUS "${_variableName}=${${_variableName}}")
+   endforeach()
+endif()

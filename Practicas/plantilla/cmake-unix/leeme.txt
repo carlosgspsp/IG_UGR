@@ -1,0 +1,38 @@
+Compilar el programa en sistemas basados en UNIX (macOS, Linux), usando CMake
+-----------------------------------------------------------------------------
+
+(Nota: en sistemas macOS, puede que tengas que añadir la carpeta
+
+/Applications/CMake.app/Contents/bin
+
+al PATH.)
+
+Los pasos son:
+
+** Ejecutar un terminal macOS o Linux, hacer 'cd' a la carpeta de trabajo.
+
+** Hacer 'cd' hasta la carpeta 'build', dentro de 'cmake-unix' (a su vez dentro de la carpeta de trabajo), esta 'build' carpeta debe estar completamente vacía inicialmente.
+
+** En esa carpeta, escribir una sola vez este comando
+
+cmake ..
+
+esto genera en 'build' diversas carpetas y archivos, entre ellos el archivo 'Makefile'.
+
+Si se quiere volver a generar todo, bastaría borrar todo el contenido de la carpeta 'build' (por ejemplo usando 'rm -rf *') y de nuevo hacer 'cmake ..'
+
+** Cada vez que se quiera compilar, en la carpeta 'build', hay que escribir
+esta orden:
+
+make
+
+si no hay errores, esta orden debe de generar el archivo ejecutable 'pracs_ig_exe' en la carpeta 'build'. Para eliminar los archivos generados al compilar y forzar que se vuelva a compilar todo, se puede ejecutar:
+
+make clean
+
+y luego de nuevo 'make'
+
+** Cada vez que se quiera ejecutar el programa hay que hacer 'cd' a la
+carpeta  de trabajo, y escribir:
+
+cmake-unix/build/pracs_ig_exe

@@ -1,0 +1,16 @@
+
+** Ejecutar un terminal macOS o Linux, hacer 'cd' a la carpeta de trabajo.
+
+** Hacer 'cd' hasta esta carpeta (carpeta 'make-unix', a su vez dentro de la carpeta de trabajo)
+
+** Cada vez que se quiera compilar, en la carpeta 'make-unix', hay que escribir esta orden:
+
+make
+
+si no hay errores, esta orden debe de generar el archivo ejecutable 'pracs_ig_exe' en la subcarpeta 'build/bin' (junto con todos los archivos .o, en la sub-carpeta 'build/objs'), después se ejecuta el programa.
+
+** Para eliminar los archivos generados al compilar y forzar que se vuelva a compilar todo, se puede ejecutar:
+
+make clean
+
+y luego de nuevo 'make'. Es conveniente hacer esto cada vez que se modique algún archivo .h, ya que con esta configuración no se captan las dependencias que hay entre cada archivo .cpp y todos los archivos .h qu incluye directa o indirectamente.

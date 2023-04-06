@@ -1,0 +1,10 @@
+^C:\USERS\CARLO\ONEDRIVE\UNIVERSIDAD\IG\PRACTICAS\TRABAJO\CMAKE-WIN\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/carlo/OneDrive/Universidad/IG/Practicas/trabajo/cmake-win -BC:/Users/carlo/OneDrive/Universidad/IG/Practicas/trabajo/cmake-win/build --check-stamp-file C:/Users/carlo/OneDrive/Universidad/IG/Practicas/trabajo/cmake-win/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

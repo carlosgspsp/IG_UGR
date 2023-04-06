@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\src\animacion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\src\array-verts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\src\camara.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\src\escena.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\src\grafo-escena.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\src\latapeones.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\src\malla-ind.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\src\malla-revol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\src\materiales-luces.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\src\modelo-jer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\src\objeto3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\src\seleccion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\recursos\src\cauce.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\recursos\src\fbo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\recursos\src\ig-aux.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\recursos\src\lector-jpg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\recursos\src\lector-ply.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\recursos\src\matrices-tr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\include\animacion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\include\array-verts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\include\camara.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\include\escena.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\include\exp4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\include\grafo-escena.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\include\latapeones.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\include\malla-ind.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\include\malla-revol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\include\materiales-luces.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\include\modelo-jer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\include\objeto3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\include\practicas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\include\seleccion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\recursos\include\cauce.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\recursos\include\fbo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\recursos\include\ig-aux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\recursos\include\lector-jpg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\recursos\include\lector-ply.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\recursos\include\matrices-tr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\recursos\include\matrizg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\recursos\include\matrizg_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\recursos\include\tuplasg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\recursos\include\tuplasg_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\carlo\OneDrive\Universidad\IG\Practicas\trabajo\cmake-win\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{931122C6-08FB-39C8-BE71-7A810206FA9F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8D0F81B6-06EC-3A94-B3DE-7AA0860FD46D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

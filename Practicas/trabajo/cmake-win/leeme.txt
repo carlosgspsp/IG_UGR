@@ -1,0 +1,34 @@
+Instalar Microsoft Visual C++ Community 2019
+* Ejecutar un terminal de desarrolladores, es una aplicación que se
+denomina "x64 native tools command prompt for Vs 2019", se puede encontrar en
+el menu inicio, en la carpeta correspondiente  "Visual Studio 2019", o bien
+buscando "command" y en la lista que se desplique seleccionar esta aplicación.
+Esta aplicación es similar al "command prompt" de windows, pero con acceso a
+programas de desarrollo.
+
+** Hacer cd hasta la carpeta 'build' dentro de 'cmake-win',
+
+** Escribir una sola vez este comando
+
+cmake -DCMAKE_GENERATOR_PLATFORM=x64 ..
+
+esto genera en 'cmake-win\build' diversas carpetas y archivos (.vcxproj, .sln y
+otros)
+
+** Cada vez que se quiera compilar, en la carpeta 'build', hay que escribir
+esta orden:
+
+cmake --build .
+
+(si no hay errores, esta orden debe de generar el archivo 'pracs_ig_exe.exe' en la
+subcarpeta 'cmake-win\build\Debug', junto con las DLLs necesarias y algún otro archivo)
+
+** Cada vez que se quiera ejecutar hacer 'cd' a la carpeta <plantilla>, escribir:
+
+cmake-win\build\Debug\pracs_ig_exe.exe
+
+** para limpiar todos los archivos ejecutables, .vcxproj, .sln, etc... se
+puede vaciar la subcarpeta 'build', para ello, en 'cmake-win', hacemos:
+
+rmdir /s /q build
+mkdir build
